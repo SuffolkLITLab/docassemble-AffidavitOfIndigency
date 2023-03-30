@@ -172,9 +172,8 @@ fields:
 id: Do you receive public assistance
 question: |
   Do you receive public assistance?
-fields:
-  - "Public assistance": public_assistance
-    datatype: yesno
+yesno: public_assistance
+
 ---
 id: If yes please check all that apply to you
 question: |
@@ -182,15 +181,15 @@ question: |
 subquestion: |
   Which public assistant services do you currently receive?
 fields:
-  - "Tafdc  box": tafdc__box
+  - "Transitional Aid to Families with Dependent Children": tafdc__box
     datatype: yesno
-  - "Eaedc box": eaedc_box
+  - "Emergency Aid to Elderly, Disabled or Children": eaedc_box
     datatype: yesno
-  - "Ssi box": SSI_box
+  - "Supplemental Security Income": SSI_box
     datatype: yesno
-  - "Mass health": mass_health
+  - "Medicaid (MassHealth) ": mass_health
     datatype: yesno
-  - "Mvpb box": mvpb_box
+  - "Massachusetts Veterans Benefits Programs ": mvpb_box
     datatype: yesno
 ---
 id: What is your personal take home pay
