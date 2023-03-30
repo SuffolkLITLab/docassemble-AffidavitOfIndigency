@@ -136,41 +136,38 @@ continue button field: Do_I_need_this_form
 ---
 id: What is your name
 question: |
-  What is your name?
+  If you are the applying for the waiver, please give us your name?
 fields:
-  - "User role1": user_role1
-    maxlength: 16
-  - "User role2": user_role2
+  - "Applicant name": user_role1
     maxlength: 16
 ---
 id: Have you already filed a case
 question: |
-  Have you already filed a case?
+  Have you already filed a case with the Court?
 subquestion: |
-  Provide your current case number, if applicable.
+  Provide your current case number, if you were provided on with the Court. If you DO NOT have a case number, wirte "N/A".
 fields:
-  - "Case num": case_num
+  - "Court provided case number": case_num
     maxlength: 16
 ---
 id: If you already have an ongoing case who is the Defendant
 question: |
   If you already have an ongoing case, who is the Defendant?
 subquestion: |
-  Who is that party that you are filing a complaint against?
+  If you DID NOT file a case/if there is no Defendant, write "N/A".
 fields:
-  - "Defendant mashpee": defendant_mashpee
+  - "Defendant": defendant_mashpee
     maxlength: 16
 ---
 id: What is your current mailing address
 question: |
-  What is your current mailing address?
+    Mailing address
 subquestion: |
-  This is a required area. Please provide the address where you will be receiving your mail.
+  Please provdide ("user_role1") address.
 fields:
-  - "Users1addressaddress": users1addressaddress
+  - "Address": users1addressaddress
     maxlength: 16
-  - "Mailing address": mailing_address
-    maxlength: 16
+ 
 ---
 id: Do you receive public assistance
 question: |
