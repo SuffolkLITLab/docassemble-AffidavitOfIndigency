@@ -215,10 +215,9 @@ fields:
 ---
 id:  personal_take_home_pay_box
 question: |
-  If you do not recieve any public asssistance, please provide your personal take home pay.
-fields:
-  - Personal income: personal_take_home_pay_box
-    datatype: currency
+  If you do not recieve any public asssistance, can you provide your personal take home pay.
+yesno: personal_take_home_pay_box
+    
 ---
 id:
 question: |
