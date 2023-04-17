@@ -152,8 +152,12 @@ id: What is your name
 question: |
   If you are the applying for the waiver, please give us your name?
 fields:
-  - "Applicant name": user_role1
+  - "Applicant full name": user_role1
     maxlength: 16
+  - "Full name of anitpcated opposing party": user_role2
+    maxlength: 16
+subquestion: |   
+  If you do not know of the opposing party yet, fill in *N/A*"
 ---
 id: Have you already filed a case
 question: |
