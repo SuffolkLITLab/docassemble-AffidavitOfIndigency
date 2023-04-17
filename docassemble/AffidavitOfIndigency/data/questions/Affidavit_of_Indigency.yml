@@ -74,12 +74,13 @@ code: |
   user_role1
   case_num
   set_progress(16)
-  defendant_mashpee
+  
   users1addressaddress
   public_assistance
   set_progress(32)
   tafdc__box
   personal_take_home_pay_box
+  pay_per_year
   number_in_household
   set_progress(48)
   other_income
@@ -112,7 +113,7 @@ code: |
 comment: |
   this is information on what paperwork is needed along with this AOI itself. 
 question: |
-  Affidavit of Indigency AND Request of Waiver of Fees & Cost
+  Paperwork you will need to file this form.
 subquestion: |
   The Affidavit of Indigency is a formal legal form than an individual submits to the Court stating their inability to pay a fee associated with their case because of financial reasons. 
   
@@ -177,11 +178,11 @@ fields:
   - "Defendant": defendant_mashpee
     maxlength: 16
 ---
-id: What is your current mailing address
+id: mailing address
 question: |
     Mailing address
 subquestion: |
-  Please provdide ("user_role1") address.
+  Please provide $ ( user_role1 ) address.
 fields:
   - "Address": users1addressaddress
     maxlength: 16
@@ -190,10 +191,12 @@ fields:
 id: Do you receive public assistance
 question: |
   Do you receive public assistance?
-yesno: public_assistance
-
+field: public_assistance
+buttons:
+- "Yes"
+- "No" 
 ---
-id: If yes please check all that apply to you
+id: If yes, please check all that apply to you
 question: |
   If yes, please check all that apply to you.
 subquestion: |
@@ -210,14 +213,19 @@ fields:
   - "Massachusetts Veterans Benefits Programs ": mvpb_box
     datatype: yesno
 ---
-id: What is your personal take home pay
+id:  personal_take_home_pay_box
+question: |
+  If you do not recieve any public asssistance, please provide your personal take home pay.
+fields:
+  - Personal income: personal_take_home_pay_box
+    datatype: currency
+---
+id:
 question: |
   What is your personal take home pay?
 subquestion: |
   Provide how much you roughly bring home in a year.
 fields:
-  - "Personal take home pay box": personal_take_home_pay_box
-    datatype: yesno
   - "Pay per year": pay_per_year
     datatype: currency
     min: 0
