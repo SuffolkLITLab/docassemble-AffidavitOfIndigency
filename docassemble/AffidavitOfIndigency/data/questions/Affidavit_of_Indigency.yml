@@ -76,6 +76,7 @@ code: |
   set_progress(16)
   
   users1addressaddress
+  mailing_address
   public_assistance
   set_progress(32)
   tafdc__box
@@ -178,15 +179,23 @@ fields:
   - "Defendant": defendant_mashpee
     maxlength: 16
 ---
-id: mailing address
+id: address
 question: |
-    Mailing address
+    Address
 subquestion: |
   Please provide $ ( user_role1 ) address.
 fields:
   - "Address": users1addressaddress
     maxlength: 16
- 
+---
+id: is mailing address different
+question: |
+  Is your address different from your mailing address?
+fields:
+ - "Yes, my mailing address is different": mailing_address
+ - note: Leave blank if No, re-enter address.
+
+continue button field: mailing_address
 ---
 id: Do you receive public assistance
 question: |
