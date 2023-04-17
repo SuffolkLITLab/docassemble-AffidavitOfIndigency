@@ -24,7 +24,7 @@ data:
   short title: >-
     Affidavit of Indigency AND Request of Waiver of Fees & Cost
   description: |-
-    This form is for tribal members who cannot pay for court fees or costs, you may be able to have the state pay for them. Fill out this form in order to determine if you are able to waive court fees.
+    This form is for tribal members who cannot pay for court fees or costs, you may be able to have the state pay for them. Fill out this form in order to determine if you are able to waive your court fees.
   original_form: >-
     https://static1.squarespace.com/static/59ca33c0f09ca4a9c58455a9/t/5a3c59c59140b7cd5733f761/1513904581788/AFFIDAVIT-OF-INDIGENCY.pdf
   allowed courts: 
@@ -116,13 +116,25 @@ continue button field: Affidavit_of_Indigency_intro
 question: |
   Affidavit of Indigency AND Request of Waiver of Fees & Cost
 subquestion: |
-  The Affidavit of Indigency is a formal form than an individual submits to the Court stating their inability to pay a fee associated with his case because of financial reasons. 
+  The Affidavit of Indigency is a formal legal form than an individual submits to the Court stating their inability to pay a fee associated with their case because of financial reasons. 
   
   You will need to following documents in order to file this form with the court:
+  
   - information on your personal take home pay from all employment sources
+  
   - receipt of a copy of the Mashpee Wampanoag Tribal Court Waiver of Court Fees
+  
   - documentation to verify ALL household income
-      - These forms may include:
+  
+  These forms may include:
+  
+  - W2 tax forms
+  
+  - financial document that show income
+  
+  - *insert more*
+  
+  *Note: You will send in these documents when you print the form at the very end. You will mail in all documents.* 
 ---
 id: Do I need this form
 question: |
