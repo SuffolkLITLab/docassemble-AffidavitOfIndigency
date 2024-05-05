@@ -65,7 +65,7 @@ code: |
   set_progress(48)
   other_income
   acknowledge_receipt_box
-  users1signature
+  users[0].signature
   set_progress(64)
   signature_date
   interview_order_Affidavit_of_Indigency = True
@@ -124,7 +124,6 @@ subquestion: |
   
   Please see the [Waiver of Court Fees Eligibility Guidelines].
   [Waiver of Court Fees Eligibility Guidelines]: ${ url_of('https://static1.squarespace.com/static/59ca33c0f09ca4a9c58455a9/t/5a3c59a28165f53e1ebd7fb1/1513904547125/WAIVER-OF-COURT-FEES.pdf')}
-
 ---
 id: What is your name
 question: |
@@ -159,7 +158,7 @@ id: address
 question: |
     Address
 subquestion: |
-  Please provide ${users} address.
+  Please provide your address.
 fields:
   - "Address": users1addressaddress
     maxlength: 16
@@ -245,7 +244,7 @@ id: address
 question: |
     Address
 subquestion: |
-  Please provide ${users1} address.
+  Please provide your address.
 fields:
   - "Address": users1addressaddress
     maxlength: 16
