@@ -1,6 +1,6 @@
 # docassemble.AffidavitOfIndigency
 
-Affidavit of Indigency AND Request of Waiver of Fees & Cost
+Mashpee Affidavit of Indigency AND Request of Waiver of Fees & Cost
 
 ## Author
 
